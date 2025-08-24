@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>プライバシーポリシー</title>
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #111827;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", "YuGothic", "Meiryo", "Helvetica Neue", Arial, sans-serif; line-height: 1.75; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+    header {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: saturate(180%) blur(8px);
+      background: rgba(255,255,255,0.7); border-bottom: 1px solid var(--border);
+    }
+    .header-inner { max-width: 960px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
+    .back { appearance: none; border: 1px solid var(--border); background: var(--card); color: var(--text); border-radius: 999px; padding: 8px 14px; cursor: pointer; font-size: 14px; }
+
+    main { max-width: 960px; margin: 24px auto; padding: 0 16px 48px; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 24px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    .updated { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
+    .divider { height: 1px; background: var(--border); margin: 16px 0 24px; }
+
+    nav.toc { background: #fafafa; border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 24px; }
+    nav.toc h2 { font-size: 16px; margin: 0 0 8px; }
+    nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+    nav.toc li { break-inside: avoid; margin: 4px 0; }
+
+    section { margin: 28px 0; }
+    section h2 { font-size: 18px; margin: 0 0 8px; }
+    p { margin: 8px 0; }
+    ol, ul { padding-left: 22px; }
+    small.note { color: var(--muted); }
+
+    footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+
+    @media (max-width: 720px) {
+      nav.toc ol { columns: 1; }
+    }
+
+    @media print {
+      header { display: none; }
+      main { margin: 0; max-width: 800px; }
+      .card { box-shadow: none; border: none; }
+      a { text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <button class="back" type="button" onclick="history.back()">← 戻る</button>
+      <strong>プライバシーポリシー</strong>
+    </div>
+  </header>
+
+  <main>
+    <article class="card" id="top">
+      <h1>プライバシーポリシー</h1>
+      <p class="updated">最終更新日：<time datetime="2025-08-02">2025年8月2日</time></p>
+      <div class="divider"></div>
+
+      <nav class="toc" aria-label="目次">
+        <h2>目次</h2>
+        <ol>
+          <li><a href="#preamble">前文</a></li>
+          <li><a href="#art-1">第1条（適用範囲）</a></li>
+          <li><a href="#art-2">第2条（取得する情報）</a></li>
+          <li><a href="#art-3">第3条（利用目的）</a></li>
+          <li><a href="#art-4">第4条（Cookieの利用）</a></li>
+          <li><a href="#art-5">第5条（第三者提供アプリによる個人情報の収集）</a></li>
+          <li><a href="#art-6">第6条（安全確保の措置）</a></li>
+          <li><a href="#art-7">第7条（個人情報の第三者への提供）</a></li>
+          <li><a href="#art-8">第8条（個人情報の共同利用）</a></li>
+          <li><a href="#art-9">第9条（本プライバシーポリシーの変更）</a></li>
+          <li><a href="#art-10">第10条（開示、訂正等の手続）</a></li>
+          <li><a href="#art-11">第11条（お問い合わせ）</a></li>
+          <li><a href="#art-12">第12条（保存期間）</a></li>
+          <li><a href="#art-13">第13条（国外移転）</a></li>
+          <li><a href="#art-14">第14条（匿名加工情報・統計情報の取扱い）</a></li>
+          <li><a href="#art-15">第15条（第三者認証サービスとの連携）</a></li>
+          <li><a href="#art-16">第16条（プライバシー影響評価）</a></li>
+          <li><a href="#art-17">第17条（従業者・委託先への監督）</a></li>
+          <li><a href="#art-18">第18条（情報漏えい等発生時の対応）</a></li>
+          <li><a href="#art-19">第19条（本人確認手続）</a></li>
+          <li><a href="#art-20">第20条（未成年者の個人情報）</a></li>
+          <li><a href="#art-21">第21条（リンク先の責任）</a></li>
+          <li><a href="#art-22">第22条（準拠法・管轄）</a></li>
+        </ol>
+      </nav>
+
+      <section id="preamble">
+        <h2>前文</h2>
+        <p>当方は、当方が提供するサービス（以下「本サービス」といいます。）を提供するにあたり、ご利用される皆様（以下「利用者」といいます。）の個人に関する情報（以下「個人情報」といいます。）を取得します。</p>
+      </section>
+
+      <section id="art-1">
+        <h2>第1条（適用範囲）</h2>
+        <p>本プライバシーポリシー（以下「本ポリシー」といいます。）は、当方が利用者から個人情報を取得、利用及び管理するときに適用されます。</p>
+      </section>
+
+      <section id="art-2">
+        <h2>第2条（取得する情報）</h2>
+        <p>当方は、利用者から以下の情報を取得します。</p>
+        <ol>
+          <li>氏名</li>
+          <li>住所</li>
+          <li>生年月日</li>
+          <li>年齢</li>
+          <li>連絡先（メールアドレス、電話番号）</li>
+          <li>法律上の要請等により本人確認を行うための運転免許証、健康保険証、住民票の写し等の本人確認情報に含まれる情報</li>
+          <li>情報通信端末の機体識別に関する情報</li>
+          <li>位置情報</li>
+          <li>IPアドレス</li>
+          <li>閲覧したURL及び日時に関するタイムスタンプ</li>
+          <li>利用状況、閲覧履歴</li>
+          <li>Appleアカウントに紐づく情報（メールアドレス、氏名等）</li>
+          <li>Googleアカウントに紐づく情報（メールアドレス、氏名等）</li>
+        </ol>
+      </section>
+
+      <section id="art-3">
+        <h2>第3条（利用目的）</h2>
+        <p>当方が個人情報を収集・利用する目的は、以下のとおりです。</p>
+        <ol>
+          <li>本サービスの提供・運営のため</li>
+          <li>本サービスの運営上必要な事項の通知のため</li>
+          <li>本サービスの会員であるお客様の管理のため</li>
+          <li>本サービスに関する新機能、更新情報をお知らせするため</li>
+          <li>メールマガジンの送信、ダイレクトメールの送付のため</li>
+          <li>広告効果の分析、市場分析、マーケティングのため</li>
+          <li>キャンペーン、懸賞企画、アンケートの実施のため</li>
+          <li>本サービスの各種問合せ、アフターサービス対応のため</li>
+          <li>不正アクセス、不正利用の防止のため</li>
+          <li>本サービスその他のコンテンツの開発・改善のため</li>
+          <li>当方が実施するサービス又は企画に関する連絡のため</li>
+          <li>上記の利用目的に付随する目的</li>
+        </ol>
+      </section>
+
+      <section id="art-4">
+        <h2>第4条（Cookieの利用）</h2>
+        <p>当方は、ウェブサイト及び本サービス（以下、これらを総称して「ウェブサイト等」といいます。）のアクセス及び利用状況の分析、広告配信並びにウェブサイト等の利便性向上のために、ウェブサイト等にアクセスした利用者の情報通信端末に保存されるCookie等のファイル及びこれに類似する技術を取得することがあります。</p>
+        <p>当方は、Cookie等と利用者の個人情報を関連付けることがあります。当方は、利用者の個人情報と関連付けたCookie等が利用者の個人情報であることに鑑み、当該Cookie等を本ポリシーの定めに従って管理いたします。</p>
+        <p>また、当方は、Cookie等の情報を第三者が運営するデータ・マネジメント・プラットフォームに提供し、当該第三者からCookie等により収集されたウェブの閲覧履歴及びその分析結果を取得し、これらを利用者の個人データと結び付けた上で、広告配信等の目的で利用することがあります。</p>
+      </section>
+
+      <section id="art-5">
+        <h2>第5条（第三者提供アプリによる個人情報の収集）</h2>
+        <p>当方は、本サービスの提供にあたり、以下の第三者提供アプリを使用しており、これらのサービス提供者による個人情報の収集が行われる場合があります。</p>
+        <ol>
+          <li>
+            <p><strong>Google AdMob</strong><br>当方は、広告配信のためにGoogle AdMobを使用しています。Google AdMobは、利用者のデバイス情報、IPアドレス、広告識別子等の情報を収集する場合があります。収集された情報は、Googleのプライバシーポリシーに従って取り扱われます。<br>
+            （<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google AdMobのプライバシーポリシー</a>）</p>
+          </li>
+          <li>
+            <p><strong>Supabase</strong><br>当方は、データベースサービスとしてSupabaseを使用しています。Supabaseは、利用者のアカウント情報、利用履歴等の情報を収集する場合があります。収集された情報は、Supabaseのプライバシーポリシーに従って取り扱われます。<br>
+            （<a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabaseのプライバシーポリシー</a>）</p>
+          </li>
+        </ol>
+        <p><small class="note">これらの第三者提供アプリによる個人情報の収集を希望しない場合は、本サービスの利用を中止してください。</small></p>
+      </section>
+
+      <section id="art-6">
+        <h2>第6条（安全確保の措置）</h2>
+        <p>当方は、収集した情報の漏えい、滅失又はき損の防止その他収集した情報の適切な管理のために必要な措置を講じます。当方が、安全管理のために講じた措置の概要は以下のとおりです。措置の具体的内容については、本ポリシーで定める窓口に対する利用者からの求めに応じて遅滞なく回答いたします。</p>
+        <ol>
+          <li>基本方針の策定、個人情報の取扱いに係る規律の整備</li>
+          <li>個人情報の取扱責任者や報告連絡体制の整備</li>
+          <li>定期的な研修の実施</li>
+          <li>個人情報についての秘密保持に関する誓約を従業者から取得</li>
+          <li>個人情報についての秘密保持に関する事項を就業規則に記載</li>
+          <li>責任者以外個人情報を容易に閲覧できないような措置の実施</li>
+          <li>個人情報を取り扱う機器等の盗難紛失等を防止するための措置を実施</li>
+          <li>個人情報を取り扱うことのできる機器やアクセス権者を明確にし、個人情報への不要なアクセスを防止</li>
+          <li>メール等により取扱う際に、パスワードを設定</li>
+          <li>個人情報を取り扱う機器等のOSを最新の状態に保持</li>
+          <li>個人情報を取り扱う機器等にセキュリティ対策ソフトウェア等を導入</li>
+        </ol>
+      </section>
+
+      <section id="art-7">
+        <h2>第7条（個人情報の第三者への提供）</h2>
+        <ol>
+          <li>
+            <p>当方は、次に掲げる場合を除いて、あらかじめ利用者の同意を得ないで、取得した個人情報を第三者に提供することはありません。</p>
+            <ol>
+              <li>法令に基づく場合</li>
+              <li>人の生命、身体又は財産の保護のために必要がある場合であって、利用者の同意を得ることが困難であるとき。</li>
+              <li>公衆衛生の向上又は児童の健全な育成の推進のために特に必要がある場合であって、利用者の同意を得ることが困難であるとき。</li>
+              <li>国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、利用者の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき。</li>
+              <li>その他法令で第三者提供の制限の例外が認められている場合</li>
+            </ol>
+          </li>
+          <li>
+            <p>前項の定めにかかわらず、次に掲げる場合には、当該個人情報の提供先は第三者に該当しないものとします。</p>
+            <ol>
+              <li>当方が利用目的の達成に必要な範囲内において個人情報の取扱いの全部又は一部を委託することに伴って当該個人情報が提供される場合</li>
+              <li>合併その他の事由による事業の承継に伴って個人情報が提供される場合</li>
+              <li>第7条に定める共同利用者に対して提供される場合</li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
+      <section id="art-8">
+        <h2>第8条（個人情報の共同利用）</h2>
+        <p>当方は、特定の者との間で共同利用することを目的として個人情報を当該特定の者に提供することがあります。この場合、当方は、あらかじめ、共同して利用する個人情報の項目、共同して利用する者の範囲、利用する者の利用目的及び当該個人情報の管理について責任を有する者の氏名又は名称及び住所並びに法人にあっては、その代表者の氏名を公表するものとします。</p>
+      </section>
+
+      <section id="art-9">
+        <h2>第9条（本プライバシーポリシーの変更）</h2>
+        <p>当方は、法令改正への対応の必要性及び事業上の必要性に応じて、本ポリシーを変更する場合があります。本ポリシーの変更を行った場合には、本アプリまたは当方が運営するウェブサイト上に掲載します。</p>
+      </section>
+
+      <section id="art-10">
+        <h2>第10条（開示、訂正等の手続）</h2>
+        <ol>
+          <li>
+            <p>利用者は、本条及び当方の関連規程に従って、当方に対し、個人情報保護法において認められる限度で、以下の求め又は請求を行うことができます。</p>
+            <ol>
+              <li>個人情報の利用目的の通知の求め</li>
+              <li>個人情報又は第三者提供記録の開示の請求</li>
+              <li>個人情報の訂正、追加又は削除の請求</li>
+              <li>個人情報の利用の停止の請求</li>
+              <li>個人情報の第三者への提供の停止の請求</li>
+            </ol>
+          </li>
+          <li>
+            <p>前項の求め又は請求にあたっては、同項各号のうちいずれの請求か特定の上、本人確認のための書類（運転免許証、健康保険証、住民票の写し等）をご提出頂きます。</p>
+          </li>
+          <li>
+            <p>第1項第1号の求め又は第2号の請求については、1件につき、1,000円の手数料をご負担頂きますのであらかじめご了承ください。なお、手数料の支払方法は当方が指定する方法とします。</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="art-11">
+        <h2>第11条（お問い合わせ）</h2>
+        <p>当方の個人情報の取扱いに関するご相談や苦情等のお問い合わせについては、「マイページ＞各種設定＞お問い合わせ」よりお問い合わせください。個人情報取扱事業者の氏名又は名称、住所及び代表者の氏名については、ウェブサイトの会社概要をご参照頂く他、利用者の求めに応じて遅滞なく回答します。</p>
+      </section>
+
+      <section id="art-12">
+        <h2>第12条（保存期間）</h2>
+        <p>当方は、取得した個人情報を、利用目的の達成に必要な期間保存し、保存期間経過後または利用目的達成後には、速やかに消去または匿名化します。ただし、法令に基づき保存義務が課せられている場合はこの限りではありません。</p>
+      </section>
+
+      <section id="art-13">
+        <h2>第13条（国外移転）</h2>
+        <p>当方は、個人情報を国外の第三者へ提供または国外で保管する場合があります。その際は、移転先が個人情報保護法その他関連法令の水準を満たすよう適切な契約を締結し、安全管理措置を講じます。</p>
+      </section>
+
+      <section id="art-14">
+        <h2>第14条（匿名加工情報・統計情報の取扱い）</h2>
+        <p>当方は、取得した個人情報を、匿名加工情報または統計情報として加工した上で、マーケティング分析、サービス改善等の目的で利用する場合があります。加工に際しては、個人を再同定できないよう法令に従い安全管理措置を講じます。</p>
+      </section>
+
+      <section id="art-15">
+        <h2>第15条（第三者認証サービスとの連携）</h2>
+        <p>利用者がApple、Google、Facebook等の第三者認証サービスを用いてログインする場合、当該サービス事業者が定めるプライバシーポリシーに従い情報提供が行われます。連携を希望しない場合は、第三者認証サービスを使用しないでください。</p>
+      </section>
+
+      <section id="art-16">
+        <h2>第16条（プライバシー影響評価）</h2>
+        <p>当方は、新たな技術導入やサービス変更により個人情報への影響が大きいと判断した場合、プライバシー影響評価（PIA）を実施し、必要な対策を講じます。</p>
+      </section>
+
+      <section id="art-17">
+        <h2>第17条（従業者・委託先への監督）</h2>
+        <p>当方は、従業者および業務委託先に対して個人情報保護の重要性を周知し、秘密保持契約の締結、アクセス制限、監査等の監督を行います。</p>
+      </section>
+
+      <section id="art-18">
+        <h2>第18条（情報漏えい等発生時の対応）</h2>
+        <p>漏えいや滅失・き損等が発生した場合、当方は速やかに事実関係を調査するとともに、影響を受ける可能性のある利用者および関係当局に通知し、被害の拡大防止措置を講じます。</p>
+      </section>
+
+      <section id="art-19">
+        <h2>第19条（本人確認手続）</h2>
+        <p>当方は、個人情報への不正アクセスを防止するため、情報開示や各種手続の際に、本人確認書類の提出または二要素認証等の手段により本人確認を行います。</p>
+      </section>
+
+      <section id="art-20">
+        <h2>第20条（未成年者の個人情報）</h2>
+        <p>13歳未満の未成年者が本サービスを利用する場合は、保護者の同意を得た上で個人情報を提供してください。保護者の同意が確認できない場合、当方は当該利用者の個人情報の取得・利用を停止することがあります。</p>
+      </section>
+
+      <section id="art-21">
+        <h2>第21条（リンク先の責任）</h2>
+        <p>本サービスには外部サイトへのリンクが含まれる場合があります。リンク先における個人情報の取扱いについて、当方は一切責任を負いません。利用者は各外部サイトのプライバシーポリシーを確認してください。</p>
+      </section>
+
+      <section id="art-22">
+        <h2>第22条（準拠法・管轄）</h2>
+        <p>本ポリシーは日本法を準拠法とします。本ポリシーに関して紛争が生じた場合、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+      </section>
+
+      <footer>
+        <p><a href="#top">▲ ページ上部へ戻る</a></p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
